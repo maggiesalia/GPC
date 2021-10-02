@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ge">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPC</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
+    <link rel="stylesheet" href="/path/to/bpg-square.min.css">
+    <script
+      src="https://kit.fontawesome.com/6de6aa5275.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="img/tab.png" type="image/gif" sizes="16x16" />
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+                <a href="index.html">
+                    <img class="gpc" src="img/gpc.svg" alt="GPC">
+                </a>
+                
+                <nav class="navigation">
+                    <ul class="nav-ul">
+                      <div class="dropdown">
+                        <a class="nav-a dropbtn" id="products" onclick="myFunction()">პროდუქცია</a>
+                        <div class="content" id="myDropdown">
+                          <ul class="parentUl">
+                            <h2>ძებნა</h2>
+                            <li class="hover">
+                              ბავშვის კვება
+                              <ul class="hoverChild">
+                                <li class="hoverChildLi">პიურე</li>
+                                <li class="hoverChildLi">ორცხობილა</li>
+                                <li class="hoverChildLi">რძიანი ფაფა</li>
+                                <li class="hoverChildLi">პლასმონი ნუტრი</li>
+                                <li class="hoverChildLi">ნუტრილონი</li>
+                              </ul>
+                            </li>
+                            <li class="hover">
+                              დედა და შვილი
+                              <ul class="hoverChild">
+                                <li class="hoverChildLi">ბავშვის ჰიგიენა</li>
+                                <li class="hoverChildLi">ბავშვის საფენი</li>
+                                <li class="hoverChildLi">სათამაშოები</li>
+                                <li class="hoverChildLi">მატყუარა</li>
+                              </ul>
+                            </li>
+                            <li class="hover">
+                              თმის მოვლა
+                              <ul class="hoverChild">
+                                <li class="hoverChildLi">თმის ვიტამინები</li>
+                                <li class="hoverChildLi">თმის ზეთი</li>
+                                <li class="hoverChildLi">თმის მასკა</li>
+                                <li class="hoverChildLi">კონდინციონერი</li>
+                              </ul>
+                            </li>
+                            <li class="hover">
+                              მედიკამენტები
+                              <ul class="hoverChild">
+                                <input
+                                  id="searchbar"
+                                  type="text"
+                                  name="search"
+                                  placeholder="ძებნა"
+                                /><i class="fas fa-search"></i>
+                                <p class="alphabet">
+                                  ა ბ გ დ ე ვ ზ თ ი კ ლ მ ნ ო პ ჟ რ ს ტ უ ფ ქ ღ ყ შ ჩ ც ძ წ ჭ
+                                  ხ ჯ ჰ
+                                </p>
+                                <div style="display: inline-flex">
+                                  <div>
+                                    <li class="hoverChildLi">ალერგია</li>
+                                    <li class="hoverChildLi">ანთება</li>
+                                    <li class="hoverChildLi">გინეკოლოგია</li>
+                                    <li class="hoverChildLi">გრიპი და გაციება</li>
+                                    <li class="hoverChildLi">დერმატოლოგია</li>
+                                    <li class="hoverChildLi">დიაბეტი</li>
+                                    <li class="hoverChildLi">ვიტამინები</li>
+                                  </div>
+                                  <div>
+                                    <li class="hoverChildLi">კუჭნაწლავი</li>
+                                    <li class="hoverChildLi">ნევროლოგიური</li>
+                                    <li class="hoverChildLi">ნივთიერებათა ცვლა</li>
+                                    <li class="hoverChildLi">ოფთალმოლოგია</li>
+                                    <li class="hoverChildLi">სასუნთქი სისტემა</li>
+                                    <li class="hoverChildLi">შარდ სასქესო</li>
+                                    <li class="hoverChildLi">ჰორმონალური</li>
+                                  </div>
+                                  <div>სხვა</div>
+                                </div>
+                              </ul>
+                            </li>
+                            <li class="hover">
+                              კოსმეტიკა
+                              <ul class="hoverChild">
+                                <li class="hoverChildLi"><a href="products.html">შამპუნი</a></li>
+                                <li class="hoverChildLi">სახის გამწმენდი</li>
+                                <li class="hoverChildLi">სახის დამატენიანებელი</li>
+                                <li class="hoverChildLi">სახის ზეთი</li>
+                                <li class="hoverChildLi">სახის ნიღაბი</li>
+                                <li class="hoverChildLi">სახის შრატი</li>
+                                <li class="hoverChildLi">მზის სერია</li>
+                                <li class="hoverChildLi">ავტორუჯი</li>
+                                <li class="hoverChildLi">რუჯის მისაღები</li>
+                                <li class="hoverChildLi">მზის დამცავი</li>
+                              </ul>
+                            </li>
+                            <li class="hover">
+                              პირის ღრუს მოვლა
+                              <ul class="hoverChild">
+                                <li class="hoverChildLi">კბილის პასტა</li>
+                                <li class="hoverChildLi">კბილის ჟაგრისი</li>
+                                <li class="hoverChildLi">კბილის ძაფი</li>
+                                <li class="hoverChildLi">პირის ღრუს სავლები</li>
+                              </ul>
+                            </li>
+                            <li class="hover">
+                              სამედიცინო მოწყობილობები
+                              <ul class="hoverChild">
+                                <li class="hoverChildLi">ნერივიო</li>
+                                <li class="hoverChildLi">წნევის საზომი აპარატი</li>
+                                <li class="hoverChildLi">სიცხის საზომი აპარატი</li>
+                              </ul>
+                            </li>
+                            <li class="hover">
+                              ჰიგიენა
+                              <ul class="hoverChild">
+                                <li class="hoverChildLi">ქალის ჰიგიენა</li>
+                                <li class="hoverChildLi">მამაკაცის ჰიგიენა</li>
+                                <li class="hoverChildLi">კოსმეტიკა</li>
+                                <li class="hoverChildLi">სასაჩუქრე ნაკრები</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </ul>
+              
+                    <ul class="nav-ul">
+                      <div class="dropdown">
+                        <a class="nav-a dropbtn" onclick="About()">ჩვენ შესახებ</a>
+                        <div class="content" id="aboutus">
+                          <div style="display: inline-flex;">
+                              <div>
+                                  <h2>კომპანია</h2>
+                                  <ul>
+                                      <li>ისტორია</li>
+                                      <li>მიღწევები და ჯილდოები</li>
+                                      <li>მართვა და მენეჯმენტი</li>
+                                      <li>ჩვენი გუნდი</li>
+                                      <li>ვაკანსიები</li>
+                                  </ul>
+                              </div>
+              
+                              <div>
+                                  <h2>ჩვენი ბრენდები</h2>
+                                  <ul>
+                                      <li>დიერაკი</li>
+                                      <li>ნუქსი</li>
+                                      <li>ფიტო</li>
+                                      <li>როქსი დოქტორ</li>
+                                      <li>რენო</li>
+                                      <li>ყველა ბრენდი</li>
+                                  </ul>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+              
+                    <ul class="nav-ul">
+                      <div class="dropdown">
+                        <a class="nav-a dropbtn" onclick="gpc()">აფთიაქები</a>
+                        <div class="content" id="pharmacy">
+                          <ul class="parentUl">
+                              <h2>ძებნა</h2>
+                              <li class="hover">
+                                თბილისი
+                                <ul class="hoverChild">
+                                    <div style="display: inline-flex;">
+                                      <div>
+                                      <li class="hoverChildLi">ავლაბარი-ვარკეთილი</li>
+                                      <li class="hoverChildLi">დიდი დიღომი-ვაშლიჯვარი</li>
+                                      <li class="hoverChildLi">ვაკე-საბურთალო</li>
+                                      <li class="hoverChildLi">ისანი-სამგორი</li>
+                                      <li class="hoverChildLi">ორთაჭალა-კრწანისი</li>
+                                      </div>
+              
+                                      <div>
+                                          <li class="hoverChildLi">გლდანი</li>
+                                          <li class="hoverChildLi">დიდუბე-ჩუღურეთი</li>
+                                          <li class="hoverChildLi">ვერა-მთაწმინდა</li>
+                                      </div>
+              
+                                      <div class="Tbilisi">
+                                          <div>
+                                              <iframe class="office" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1487.62401570287!2d44.78142125771435!3d41.77986796884802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446deaa6f9aaa5%3A0xff5ad8760619167!2s142%20Akaki%20Beliashvili%20St%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1628120545351!5m2!1sen!2sge" allowfullscreen="" loading="lazy"></iframe>
+                                          </div>
+                                          <h2>სათაო ოფისი</h2>
+                                          <p>ბელიაშვილის 142</p>
+                                      </div>
+                                  </div>
+                                  
+                                </ul>
+                              </li>
+                              <li class="hover">
+                                  აჭარა
+                              </li>
+                              <li class="hover">
+                                  გურია
+                              </li>
+                              <li class="hover">
+                                  იმერეთი
+                              </li>
+                              <li class="hover">
+                                  კახეთი
+                              </li>
+                              <li class="hover">
+                                  მცხეთა-მთიანეთი
+                              </li>
+                              <li class="hover">
+                                  რაჭა
+                              </li>
+                              <li class="hover">
+                                  სამეგრელო
+                              </li>
+                              <li class="hover">
+                                  სამცხე-ჯავახეთი
+                              </li>
+                              <li class="hover">
+                                  სვანეთი
+                              </li>
+                              <li class="hover">
+                                  ქვემო ქართლი
+                              </li>
+                              <li class="hover">
+                                  შიდა ქართლი
+                              </li>
+                        </div>
+                      </div>
+                    </ul>
+                </nav>
+
+                    <div>
+                        <div class="lang">
+                            <p class="choose">ქარ</p>
+                            <p class="choose">eng</p>      
+                        </div>
+                        
+                        <div class="user">
+                            <a class="customer" href="#"><img src="img/bag.png" alt="bag"></a>
+                            <a class="customer" href="#"><img src="img/heart.png" alt="heart"></a>
+                            <a class="customer" href="#"><img src="img/user.png" alt="user"></a>
+                            <div class="dropdown">
+                                <a class="customer" href="#">კაბინეტი</a>
+                                <div class="dropdown-content">
+                                    <a href="profile.html"><img src="img/profile.svg">პროფილი</a>
+                                    <a href="purchase.html"><img src="img/box1.svg">შეკვეთები</a>
+                                    <a href="products.html"><img src="img/card.svg">ზღარბი ბარათი</a>
+                                    <a href="fav.html"><img src="img/notifications.svg">შეტყობინებები</a>
+                                    <a href="index.html"><img src="img/logout.svg">გამოსვლა</a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>           
+        </div>
+    </header>
+
+    <section class="container">  
+        <div class="tab-wrap">
+            <div class="tab">
+                <button class="tablinks active" onclick="openCity(event, 'me')" id="defaultOpen"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+                    <path id="Path_319" data-name="Path 319" d="M25,8.988A5.513,5.513,0,1,1,19.487,14.5,5.512,5.512,0,0,1,25,8.988m0,23.625c7.8,0,16.013,3.833,16.013,5.513v2.888H8.988V38.125c0-1.68,8.216-5.513,16.012-5.513M25,4A10.5,10.5,0,1,0,35.5,14.5,10.5,10.5,0,0,0,25,4Zm0,23.625c-7.009,0-21,3.518-21,10.5V46H46V38.125C46,31.143,32.009,27.625,25,27.625Z" transform="translate(-4 -4)"/>
+                  </svg>
+                  ჩემი დეტალები</button>
+
+                <button class="tablinks" onclick="openCity(event, 'box')"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <g id="box" transform="translate(0 -15.499)">
+                      <g id="Group_612" data-name="Group 612" transform="translate(0 15.499)">
+                        <path id="Path_317" data-name="Path 317" d="M44.348,32.651l5.4-8.481a1.644,1.644,0,0,0,.174-1.376A1.514,1.514,0,0,0,49,21.815L31.321,15.578a1.42,1.42,0,0,0-1.68.615L25,23.6l-4.641-7.41a1.42,1.42,0,0,0-1.68-.615L1,21.815a1.514,1.514,0,0,0-.926.978A1.645,1.645,0,0,0,.253,24.17l5.4,8.481-5.4,8.481a1.645,1.645,0,0,0-.174,1.377A1.514,1.514,0,0,0,1,43.487l4.953,1.748V57.7a1.554,1.554,0,0,0,1,1.479l17.572,6.235a1.381,1.381,0,0,0,.937,0l17.573-6.235a1.554,1.554,0,0,0,1-1.479V45.234L49,43.486a1.514,1.514,0,0,0,.926-.978,1.644,1.644,0,0,0-.174-1.377ZM31.459,18.913l14.777,5.214L41.989,30.8,27.283,25.58ZM3.764,24.127l14.777-5.214,4.176,6.668L8.012,30.8Zm0,17.048L8.012,34.5l14.706,5.218-4.176,6.668Zm19.771,20.6-14.648-5.2V46.268l9.793,3.455a1.42,1.42,0,0,0,1.68-.615l3.176-5.07ZM25,37.244,12.055,32.651,25,28.057l12.946,4.593ZM41.114,56.579l-14.648,5.2V44.038l3.176,5.071a1.42,1.42,0,0,0,1.68.615l9.793-3.455Zm-9.655-10.19-4.176-6.668L41.989,34.5l4.248,6.671C45.985,41.264,31.895,46.234,31.459,46.389Z" transform="translate(0 -15.499)"/>
+                      </g>
+                    </g>
+                  </svg>
+                  ჩემი შეკვეთები</button>
+
+                <button class="tablinks" onclick="openCity(event, 'address')"><svg id="business-24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path id="Path_314" data-name="Path 314" d="M25,12.778V3H2V47H48V12.778ZM11.2,42.111H6.6V37.222h4.6Zm0-9.778H6.6V27.444h4.6Zm0-9.778H6.6V17.667h4.6Zm0-9.778H6.6V7.889h4.6Zm9.2,29.333H15.8V37.222h4.6Zm0-9.778H15.8V27.444h4.6Zm0-9.778H15.8V17.667h4.6Zm0-9.778H15.8V7.889h4.6Zm23,29.333H25V37.222h4.6V32.333H25V27.444h4.6V22.556H25V17.667H43.4ZM38.8,22.556H34.2v4.889h4.6Zm0,9.778H34.2v4.889h4.6Z" transform="translate(0 0)"/>
+                  </svg>
+                  მისამართები</button>
+
+                <button class="tablinks" onclick="openCity(event, 'payment')"> <svg id="payment-24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path id="Path_315" data-name="Path 315" d="M0,0H50V50H0Z" fill="none"/>
+                    <path id="Path_316" data-name="Path 316" d="M43.4,4H6.6C4.047,4,2.023,6.336,2.023,9.25L2,40.75C2,43.664,4.047,46,6.6,46H43.4c2.553,0,4.6-2.336,4.6-5.25V9.25C48,6.336,45.953,4,43.4,4Zm0,36.75H6.6V25H43.4Zm0-26.25H6.6V9.25H43.4Z"/>
+                  </svg>
+                  გადახდის მეთოდები</button>
+
+                <button class="tablinks" onclick="openCity(event, 'password')"><svg id="no_encryption-24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path id="Path_320" data-name="Path 320" d="M0,0H50V50H0ZM0,0H50V50H0ZM0,0H50V50H0ZM0,0H50V50H0Z" fill="none"/>
+                    <path id="Path_321" data-name="Path 321" d="M17.333,11.909c0-3.731,3.377-6.764,7.531-6.764S32.4,8.178,32.4,11.909v4.364H21.074l4.859,4.364H39.44V32.767L44.3,37.131V20.636a4.645,4.645,0,0,0-4.859-4.364H37.011V11.909C37.011,5.887,31.569,1,24.864,1c-5.636,0-10.349,3.469-11.71,8.16l4.178,3.753ZM6.425,9.313,3,12.389,7.956,16.84a4.289,4.289,0,0,0-2.527,3.8V42.455a4.645,4.645,0,0,0,4.859,4.364H41.335L43.765,49l3.425-3.076Zm3.863,33.142V20.636h1.895L36.477,42.455Z" transform="translate(0 0)" />
+                  </svg>
+                  ჩემი პაროლი</button>
+
+                <button class="tablinks" onclick="openCity(event, 'giftcard')"><svg id="card_giftcard-24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path id="Path_303" data-name="Path 303" d="M0,0H50V50H0Z" fill="none"/>
+                    <path id="Path_304" data-name="Path 304" d="M43.4,11.474H38.386A7.3,7.3,0,0,0,38.8,9.105,7,7,0,0,0,31.9,2a6.843,6.843,0,0,0-5.75,3.2L25,6.784,23.85,5.174A6.877,6.877,0,0,0,18.1,2a7,7,0,0,0-6.9,7.105,7.3,7.3,0,0,0,.414,2.368H6.6a4.635,4.635,0,0,0-4.577,4.737L2,42.263A4.654,4.654,0,0,0,6.6,47H43.4A4.654,4.654,0,0,0,48,42.263V16.211A4.654,4.654,0,0,0,43.4,11.474ZM31.9,6.737a2.369,2.369,0,1,1-2.3,2.368A2.342,2.342,0,0,1,31.9,6.737Zm-13.8,0a2.369,2.369,0,1,1-2.3,2.368A2.342,2.342,0,0,1,18.1,6.737ZM43.4,42.263H6.6V37.526H43.4Zm0-11.842H6.6V18.579a2.342,2.342,0,0,1,2.3-2.368h9.384l-3.4,4.784a2.4,2.4,0,0,0,.506,3.316,2.262,2.262,0,0,0,3.2-.521l6.417-9,6.417,9a2.262,2.262,0,0,0,3.2.521,2.4,2.4,0,0,0,.506-3.316l-3.4-4.784H41.1a2.342,2.342,0,0,1,2.3,2.368Z" />
+                  </svg>
+                  ზღარბი ბარათი</button>
+
+                <button class="tablinks" onclick="openCity(event, 'help')"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                    <path id="Path_312" data-name="Path 312" d="M18.2,30.8h3.6V27.2H18.2ZM20,2A18,18,0,1,0,38,20,18.007,18.007,0,0,0,20,2Zm0,32.4A14.4,14.4,0,1,1,34.4,20,14.419,14.419,0,0,1,20,34.4ZM20,9.2a7.2,7.2,0,0,0-7.2,7.2h3.6a3.6,3.6,0,1,1,7.2,0c0,3.6-5.4,3.15-5.4,9h3.6c0-4.05,5.4-4.5,5.4-9A7.2,7.2,0,0,0,20,9.2Z" transform="translate(-2 -2)"/>
+                  </svg>
+                  დახმარება</button>
+    
+              </div>
+              
+              <div id="me" class="tabcontent">
+                <div id='personal'>
+                    <div class="personal-info">
+                        <form action="/">
+                            <label for="fname">სახელი</label>
+                            <input type="text" id="fname" name="firstname" placeholder="თქვენი სახელი" required>
+                        
+                            <label for="lname">გვარი</label>
+                            <input type="text" id="lname" name="lastname" placeholder="თქვენი გვარი" required>
+                        
+                            <label for="country">მისამართი</label>
+                            <input type="text" id="lname" name="lastname" placeholder="მისამართი" required>
+                          
+                            <label for="phone">ტელეფონი</label><br><br>
+                            <input type="tel" id="phone" name="phone" placeholder="123-45-678" required>
+    
+                            <label for="email">ელ ფოსტა</label>
+                            <input type="email" id="email" name="email" required>
+    
+                            <label for="birthday">დაბადების თარიღი</label>
+                            <input type="date" id="bday" name="birthday">
+                            
+                        </form>
+                    </div>
+                    <div>
+                    <img class="profile" src="img/bottom.png" alt="profile">
+                    
+                        <label for="interested">დაინტერესებული</label>
+                        <div id='interest'>
+                            <div class="interested">
+                                <label class="filter">მედიკამენტები
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="filter">საკვები
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="filter">კოსმეტიკა
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+        
+                            <div class="interested">
+                                <label class="filter">ჰიგიენური
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="filter">სამედიცინო მოწყობილობები
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="filter">დედა-შვილი
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button>დამახსოვრება</button>
+              </div>
+              
+              <div id="box" class="tabcontent" style="display: none;">
+                <img class="images" src="img/mypurchase.jpg" alt="my purchase">
+              </div>
+              
+              <div id="address" class="tabcontent" style="display: none;">
+                <h3>მისამართები</h3>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d95310.38933642172!2d44.70538216288036!3d41.71081475194026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zZ3BjIOGDm-GDmOGDoeGDkOGDm-GDkOGDoOGDl-GDlOGDkeGDmA!5e0!3m2!1sen!2sge!4v1627864404396!5m2!1sen!2sge" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+
+              <div id="payment" class="tabcontent" style="display: none;">
+                <img class="images" src="img/error.jpg" alt="return to home page">
+              </div>
+
+              <div id="password" class="tabcontent" style="display: none;">
+                <img class="images" src="img/error.jpg" alt="return to home page">
+              </div>
+
+              <div id="giftcard" class="tabcontent" style="display: none;">
+                <img class="images" src="img/error.jpg" alt="return to home page">
+              </div>
+
+              <div id="help" class="tabcontent" style="display: none;">
+                <img class="images" src="img/error.jpg" alt="return to home page">
+              </div>
+        </div>
+      
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-col">
+                    <div>
+                        <img class="footer-gpc" src="img/gpc.svg" alt="GPC">
+                    </div>
+                    <div class="contact">
+                        <h4>შემოგვიერთდით</h4>
+                        <div class="social-icons-wrapper">
+                          <a href="https://www.facebook.com/"><img class="social-icons" src="img/fb.svg" alt="Facebook"></a>
+                          <a href="https://www.instagram.com/"><img class="social-icons" src="img/instagram.svg" alt="Instagram"></a>
+                          <a href="https://www.youtube.com/"><img class="social-icons" src="img/youtube.svg" alt="Youtube"></a>
+                      </div>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="footer-col">
+                        <h4>პროდუქცია</h4>
+                        <ul>
+                            <li>მედიკამენტები</li>
+                            <li>საყოფაცხოვრებო</li>
+                            <li>ჰიგიენური საშუალებები</li>
+                            <li>კოსმეტიკა</li>
+                            <li>სილამაზის პროდუქცია</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>ჩვენი ბრენდები</h4>
+                        <ul>
+                            <li>ლიერაკი</li>
+                            <li>ნუქსი</li>
+                            <li>ფიტო</li>
+                            <li>როქსი დოქტორ</li>
+                            <li>რენო</li>
+                            <li>ყველა ბრენდი</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>კომპანია</h4>
+                        <ul>
+                            <li>ისტორია</li>
+                            <li>მიღწევები და ჯილდოები</li>
+                            <li>მართვა და მენეჯმენტი</li>
+                            <li>ჩვენი გუნდი</li>
+                            <li>ვაკანსიები</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>კონტაქტი</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>ბელიაშვილის 142</li>
+                        <li><i class="fas fa-phone-alt"></i>(+995 32) 2940740</li>
+                        <li><i class="fas fa-phone-alt"></i>(+995 32) 2710707</li>
+                        <li><i class="far fa-envelope"></i>info@gpc.ge</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="copyright">  
+                    <p>2021 JSC GPC. All rights reserved.</p>
+                   
+                    <div class="policy">
+                        <p>Terms of use</p>
+                        <p>Privacy policy</p>
+                        <p>Cookies policy</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

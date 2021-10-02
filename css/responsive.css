@@ -1,0 +1,192 @@
+@media (max-width: 768px){
+    .user,
+    .navigation,
+    .lang,
+    .main-view{
+      display: none;
+    }
+
+    .copyright{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .order{
+      flex-wrap: wrap;
+    }
+    .contact{
+      display: block;
+      flex-wrap: wrap;
+    }
+    .contact h4{
+      display: none;
+    }
+    .social-icons-wrapper{
+      margin-bottom: 51px;
+    }
+    .center{
+      margin-top: 50px;
+    }
+    .basket{
+      margin: 0 auto;
+      width: auto;
+    }
+    .order-wrapper{
+      margin: 0 auto;
+    }
+    .gpc{
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .my-ord{
+      flex-wrap: wrap;
+    }
+    .order,
+    .popup,
+    .sum{
+      padding: 10px;
+
+    }
+    .bar,
+    .buy,
+    #description-info,
+    #interest,
+    #personal{
+      flex-wrap: wrap;
+    }
+    .tabcontent{
+      margin-bottom: 90px;
+    }
+  
+    .buy,
+    .favorite,
+    .quantity{
+      margin-bottom: 15px;
+    }
+    .profile{
+      display: none;
+    }
+    label{
+      display: block;
+    }
+    .tab-wrap{
+      flex-wrap: wrap;
+    }
+    .tabcontent img{
+      margin-left: 0;
+    }
+}
+@media (max-width: 1024px){
+  .buttom-section{
+    margin-top: 90px;
+  }
+  .social-icons-wrapper{
+    flex-wrap: wrap;
+  }
+  .products{
+    display: none;
+  }
+  #main{
+    margin-bottom: 130px;
+  }
+  
+  #haircare{
+    display: flex;
+    margin-left: 50px;
+  }
+  .clarins-offer{
+    flex-wrap: wrap;
+  }
+  
+}
+@media (max-width: 1180px){
+  .header-wrapper,
+  .footer-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .wrapper,
+  .might-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .tab{
+    margin-left: 19px;
+  }
+  .pay,
+  .order-wrapper{
+    flex-wrap: wrap;
+  }
+  .woocommerce-ordering{
+    display: none;
+  }
+  .line{
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .container{
+    padding: 20px;
+  }
+  /* .box{
+    width: 50%;
+  } */
+  .lang,
+  .navigation{
+    display: none;
+  }
+
+}
+@media (max-width: 1200px){
+  .wrap-all{
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  .main-view{
+    width: 50%;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 960px){
+  .order{
+    flex-wrap: wrap;
+  }
+  .all-ords,
+  .offer-text,
+  .offer{
+    flex-wrap: wrap;
+  }
+  .products-js{
+    flex-direction: column;
+  }
+ 
+}
+@media (max-width: 425px){
+  .description {
+    margin-top: 100px;
+}
+ .products-js button{
+   margin-left: 0;
+ }
+ .buy{
+   margin-top: 15px;
+ }
+ .offer-text{
+   padding-right: 0;
+   margin-top: 20px;
+ }
+ .offer button{
+   margin-top: 30px;
+ }
+ 
+ .mySlides-text{
+   font-size: 16px;
+ }
+ .mySlides-p{
+   font-size: 13px;
+ }
+}
+

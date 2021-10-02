@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ge">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPC</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
+    <link rel="stylesheet" href="/path/to/bpg-square.min.css">
+    <script
+      src="https://kit.fontawesome.com/6de6aa5275.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="img/tab.png" type="image/gif" sizes="16x16" />
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <a href="index.html">
+                <img class="gpc" src="img/gpc.svg" alt="GPC">
+            </a>
+            <nav class="navigation">
+                <ul class="nav-ul">
+                  <div class="dropdown">
+                    <a class="nav-a dropbtn" id="products" onclick="myFunction()">პროდუქცია</a>
+                    <div class="content" id="myDropdown">
+                      <ul class="parentUl">
+                        <h2>ძებნა</h2>
+                        <li class="hover">
+                          ბავშვის კვება
+                          <ul class="hoverChild">
+                            <li class="hoverChildLi">პიურე</li>
+                            <li class="hoverChildLi">ორცხობილა</li>
+                            <li class="hoverChildLi">რძიანი ფაფა</li>
+                            <li class="hoverChildLi">პლასმონი ნუტრი</li>
+                            <li class="hoverChildLi">ნუტრილონი</li>
+                          </ul>
+                        </li>
+                        <li class="hover">
+                          დედა და შვილი
+                          <ul class="hoverChild">
+                            <li class="hoverChildLi">ბავშვის ჰიგიენა</li>
+                            <li class="hoverChildLi">ბავშვის საფენი</li>
+                            <li class="hoverChildLi">სათამაშოები</li>
+                            <li class="hoverChildLi">მატყუარა</li>
+                          </ul>
+                        </li>
+                        <li class="hover">
+                          თმის მოვლა
+                          <ul class="hoverChild">
+                            <li class="hoverChildLi">თმის ვიტამინები</li>
+                            <li class="hoverChildLi">თმის ზეთი</li>
+                            <li class="hoverChildLi">თმის მასკა</li>
+                            <li class="hoverChildLi">კონდინციონერი</li>
+                          </ul>
+                        </li>
+                        <li class="hover">
+                          მედიკამენტები
+                          <ul class="hoverChild">
+                            <!-- <input
+                              id="searchbar"
+                              type="text"
+                              name="search"
+                              placeholder="ძებნა"
+                            /><i class="fas fa-search"></i> -->
+                            <p class="alphabet">
+                              ა ბ გ დ ე ვ ზ თ ი კ ლ მ ნ ო პ ჟ რ ს ტ უ ფ ქ ღ ყ შ ჩ ც ძ წ ჭ
+                              ხ ჯ ჰ
+                            </p>
+                            <div style="display: inline-flex">
+                              <div>
+                                <li class="hoverChildLi">ალერგია</li>
+                                <li class="hoverChildLi">ანთება</li>
+                                <li class="hoverChildLi">გინეკოლოგია</li>
+                                <li class="hoverChildLi">გრიპი და გაციება</li>
+                                <li class="hoverChildLi">დერმატოლოგია</li>
+                                <li class="hoverChildLi">დიაბეტი</li>
+                                <li class="hoverChildLi">ვიტამინები</li>
+                              </div>
+                              <div>
+                                <li class="hoverChildLi">კუჭნაწლავი</li>
+                                <li class="hoverChildLi">ნევროლოგიური</li>
+                                <li class="hoverChildLi">ნივთიერებათა ცვლა</li>
+                                <li class="hoverChildLi">ოფთალმოლოგია</li>
+                                <li class="hoverChildLi">სასუნთქი სისტემა</li>
+                                <li class="hoverChildLi">შარდ სასქესო</li>
+                                <li class="hoverChildLi">ჰორმონალური</li>
+                              </div>
+                              <div>სხვა</div>
+                            </div>
+                          </ul>
+                        </li>
+                        <li class="hover" id="cosmetics"> 
+                          კოსმეტიკა
+                          <ul class="hoverChild">
+                            <li class="hoverChildLi"><a href="products.html">შამპუნი</a></li>
+                            <li class="hoverChildLi">სახის გამწმენდი</li>
+                            <li class="hoverChildLi">სახის დამატენიანებელი</li>
+                            <li class="hoverChildLi">სახის ზეთი</li>
+                            <li class="hoverChildLi">სახის ნიღაბი</li>
+                            <li class="hoverChildLi">სახის შრატი</li>
+                            <li class="hoverChildLi">მზის სერია</li>
+                            <li class="hoverChildLi">ავტორუჯი</li>
+                            <li class="hoverChildLi">რუჯის მისაღები</li>
+                            <li class="hoverChildLi">მზის დამცავი</li>
+                          </ul>
+                        </li>
+                        <li class="hover">
+                          პირის ღრუს მოვლა
+                          <ul class="hoverChild">
+                            <li class="hoverChildLi">კბილის პასტა</li>
+                            <li class="hoverChildLi">კბილის ჟაგრისი</li>
+                            <li class="hoverChildLi">კბილის ძაფი</li>
+                            <li class="hoverChildLi">პირის ღრუს სავლები</li>
+                          </ul>
+                        </li>
+                        <li class="hover">
+                          სამედიცინო მოწყობილობები
+                          <ul class="hoverChild">
+                            <li class="hoverChildLi">ნერივიო</li>
+                            <li class="hoverChildLi">წნევის საზომი აპარატი</li>
+                            <li class="hoverChildLi">სიცხის საზომი აპარატი</li>
+                          </ul>
+                        </li>
+                        <li class="hover">
+                          ჰიგიენა
+                          <ul class="hoverChild">
+                            <li class="hoverChildLi">ქალის ჰიგიენა</li>
+                            <li class="hoverChildLi">მამაკაცის ჰიგიენა</li>
+                            <li class="hoverChildLi">კოსმეტიკა</li>
+                            <li class="hoverChildLi">სასაჩუქრე ნაკრები</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </ul>
+          
+                <ul class="nav-ul">
+                  <div class="dropdown">
+                    <a class="nav-a dropbtn" onclick="About()">ჩვენ შესახებ</a>
+                    <div class="content" id="aboutus">
+                      <div style="display: inline-flex;">
+                          <div>
+                              <h2>კომპანია</h2>
+                              <ul>
+                                  <li class="hoverChildLi">ისტორია</li>
+                                  <li class="hoverChildLi">მიღწევები და ჯილდოები</li>
+                                  <li class="hoverChildLi">მართვა და მენეჯმენტი</li>
+                                  <li class="hoverChildLi">ჩვენი გუნდი</li>
+                                  <li class="hoverChildLi">ვაკანსიები</li>
+                              </ul>
+                          </div>
+          
+                          <div>
+                              <h2>ჩვენი ბრენდები</h2>
+                              <ul>
+                                  <li class="hoverChildLi">დიერაკი</li>
+                                  <li class="hoverChildLi">ნუქსი</li>
+                                  <li class="hoverChildLi">ფიტო</li>
+                                  <li class="hoverChildLi">როქსი დოქტორ</li>
+                                  <li class="hoverChildLi">რენო</li>
+                                  <li class="hoverChildLi">ყველა ბრენდი</li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+          
+                <ul class="nav-ul">
+                  <div class="dropdown">
+                    <a class="nav-a dropbtn" onclick="gpc()">აფთიაქები</a>
+                    <div class="content" id="pharmacy">
+                      <ul class="parentUl">
+                          <h2>ძებნა</h2>
+                          <li class="hover">
+                            თბილისი
+                            <ul class="hoverChild">
+                                <div style="display: inline-flex; justify-content: space-between;">
+                                  <div>
+                                  <li class="hoverChildLi">ავლაბარი-ვარკეთილი</li>
+                                  <li class="hoverChildLi">დიდი დიღომი-ვაშლიჯვარი</li>
+                                  <li class="hoverChildLi">ვაკე-საბურთალო</li>
+                                  <li class="hoverChildLi">ისანი-სამგორი</li>
+                                  <li class="hoverChildLi">ორთაჭალა-კრწანისი</li>
+                                  </div>
+          
+                                  <div>
+                                      <li class="hoverChildLi">გლდანი</li>
+                                      <li class="hoverChildLi">დიდუბე-ჩუღურეთი</li>
+                                      <li class="hoverChildLi">ვერა-მთაწმინდა</li>
+                                  </div>
+          
+                                  <div class="Tbilisi">
+                                      <div>
+                                          <iframe class="office" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1487.62401570287!2d44.78142125771435!3d41.77986796884802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446deaa6f9aaa5%3A0xff5ad8760619167!2s142%20Akaki%20Beliashvili%20St%2C%20T&#39;bilisi!5e0!3m2!1sen!2sge!4v1628120545351!5m2!1sen!2sge" allowfullscreen="" loading="lazy"></iframe>
+                                      </div>
+                                      <h2>სათაო ოფისი</h2>
+                                      <p>ბელიაშვილის 142</p>
+                                  </div>
+                              </div>
+                              
+                            </ul>
+                          </li>
+                          <li class="hover">
+                              აჭარა
+                          </li>
+                          <li class="hover">
+                              გურია
+                          </li>
+                          <li class="hover">
+                              იმერეთი
+                          </li>
+                          <li class="hover">
+                              კახეთი
+                          </li>
+                          <li class="hover">
+                              მცხეთა-მთიანეთი
+                          </li>
+                          <li class="hover">
+                              რაჭა
+                          </li>
+                          <li class="hover">
+                              სამეგრელო
+                          </li>
+                          <li class="hover">
+                              სამცხე-ჯავახეთი
+                          </li>
+                          <li class="hover">
+                              სვანეთი
+                          </li>
+                          <li class="hover">
+                              ქვემო ქართლი
+                          </li>
+                          <li class="hover">
+                              შიდა ქართლი
+                          </li>
+                    </div>
+                  </div>
+                </ul>
+            </nav>
+            <div>
+                <div class="lang">
+                            <p class="choose">ქარ</p>
+                            <p class="choose">eng</p>      
+                        </div>
+
+                <div class="user">
+                    <a class="customer" href="#"><img src="img/bag.png" alt="bag"></a>
+                    <a class="customer" href="#"><img src="img/heart.png" alt="heart"></a>
+                    <a class="customer" href="#"><img src="img/user.png" alt="user"></a>
+                    <div class="dropdown">
+                        <a class="customer" href="#">კაბინეტი</a>
+                        <div class="dropdown-content">
+                            <a href="profile.html"><img src="img/profile.svg">პროფილი</a>
+                            <a href="purchase.html"><img src="img/box1.svg">შეკვეთები</a>
+                            <a href="products.html"><img src="img/card.svg">ზღარბი ბარათი</a>
+                            <a href="fav.html"><img src="img/notifications.svg">შეტყობინებები</a>
+                            <a href="index.html"><img src="img/logout.svg">გამოსვლა</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+    <section class="container">
+        <div class="wrap-all">
+            <div class="basket">
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="max-width: 360px; width: 100%;">
+                        <div class="method">
+                            <p>მიწოდების მეთოდი</p>
+                            <img src="img/checkmark.svg">
+                        </div>
+                        <label class="filter">ადგილზე მიტანა
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <img src="img/edit.svg">
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="max-width: 360px; width: 100%;">
+                        <div class="method">
+                            <p>მისამართი</p>
+                            <img src="img/checkmark.svg">
+                        </div>
+                        <p>ჭავაჭავაძის გამზირი 23</p>
+                    </div>
+                    <div>
+                        <img src="img/edit.svg">
+                    </div>
+                </div>
+
+
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="max-width: 360px; width: 100%;">
+                        <div class="method">
+                            <p>გადახდის მეთოდი</p>
+                            <img src="img/checkmark.svg">
+                        </div>
+                        <label class="filter">საბანკო ბარათით
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <img src="img/edit.svg">
+                    </div>
+                </div>               
+            </div>
+        
+            <div class="order">
+                <div class="all-ords">
+                    <h3>თქვენი შეკვეთა</h3>
+                    <div class="my-ord">
+                        <img src="img/second.png">
+                        <div class="ord-text">
+                            <div class="ord-name">
+                                <p>თმის კონდინციონერი</p>
+                                <p>12 ლარი</p>
+                            </div>
+                            <p style="padding-bottom: 20px;">KLORANE</p>
+                            <div class="quantity">
+                                <div class="quantity-wrapper">
+                                    <button id="min">-</button>
+                                    <input type="number" value="1"/>
+                                    <button id="plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="my-ord">
+                        <img src="img/last.png">
+                        <div class="ord-text">
+                            <div class="ord-name">
+                                <p>დეოდორანტი</p>
+                                <p>12 ლარი</p>
+                            </div>
+                            <p style="padding-bottom: 20px;">VICHY</p>
+                            <div class="quantity">
+                                <div class="quantity-wrapper">
+                                    <button id="min">-</button>
+                                    <input type="number" value="1"/>
+                                    <button id="plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="my-ord">
+                        <img src="img/shampoo.png">
+                        <div class="ord-text">
+                            <div class="ord-name">
+                                <p>შამპუნი</p>
+                                <p>12 ლარი</p>
+                            </div>
+                            <p style="padding-bottom: 20px;">Yves Rocher</p>
+                            <div class="quantity">
+                                <div class="quantity-wrapper">
+                                    <button id="min">-</button>
+                                    <input type="number" value="1"/>
+                                    <button id="plus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sum">
+                        <p>სულ თანხა</p>
+                        <p>36 ლარი</p>
+                    </div>
+                    <button class="buy-all" href="#" onclick="show('popup')">ყიდვა</button>
+
+                    <div class="popup" id="popup">
+                        <h2 class="blue-title">გილოცავთ!</h2>
+                        <p>თქვენ წარმატებით განახორციელეთ შესყიდვა.</p>
+                        <a href="#" onclick="hide('popup')"><i class="fas fa-times-circle"></i></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+       
+
+    </section>
+
+    <section>
+        <div class="container">
+             <h3 class="center">შეიძლება დაგაინტერესოთ</h3> 
+            <div class="wrapper">
+                <div class="might-wrapper">
+                    <img class="might" src="img/first.png">
+                    <div class="info">
+                        <p class="text">ივ როშეს - შამპუნი შეღებილი თმისთვის</p>
+                    <p>65 ლარი</p>
+                    </div>
+                    
+                </div>
+    
+                <div class="might-wrapper">
+                    <img class="might" src="img/second.png">
+                    <div class="info">
+                        <p class="text">კლორანი-შამპუნი ბუნებრივი ქერა თმისთვის</p>
+                    <p>30 ლარი</p>
+                    </div>
+                    
+                </div>
+    
+                <div class="might-wrapper">
+                    <img class="might" src="img/third.png">
+                    <div class="info">
+                        <p class="text">ივ როშეს - მოცულობის მიმცემი შამპუნი</p>
+                    <p>32 ლარი</p>
+                    </div>
+                    
+                </div>
+
+                <div class="might-wrapper">
+                    <img class="might" src="img/last.png">
+                    <div class="info">
+                        <p class="text">ვიშის დეზადორი</p>
+                        <p>12 ლარი</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-col">
+                    <div>
+                        <img class="footer-gpc" src="img/gpc.svg" alt="GPC">
+                    </div>
+                    <div class="contact">
+                        <h4>შემოგვიერთდით</h4>
+                        <div class="social-icons-wrapper">
+                            <a href="https://www.facebook.com/"><img class="social-icons" src="img/fb.svg" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/"><img class="social-icons" src="img/instagram.svg" alt="Instagram"></a>
+                            <a href="https://www.youtube.com/"><img class="social-icons" src="img/youtube.svg" alt="Youtube"></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="footer-col">
+                        <h4>პროდუქცია</h4>
+                        <ul>
+                            <li>მედიკამენტები</li>
+                            <li>საყოფაცხოვრებო</li>
+                            <li>ჰიგიენური საშუალებები</li>
+                            <li>კოსმეტიკა</li>
+                            <li>სილამაზის პროდუქცია</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>ჩვენი ბრენდები</h4>
+                        <ul>
+                            <li>ლიერაკი</li>
+                            <li>ნუქსი</li>
+                            <li>ფიტო</li>
+                            <li>როქსი დოქტორ</li>
+                            <li>რენო</li>
+                            <li>ყველა ბრენდი</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>კომპანია</h4>
+                        <ul>
+                            <li>ისტორია</li>
+                            <li>მიღწევები და ჯილდოები</li>
+                            <li>მართვა და მენეჯმენტი</li>
+                            <li>ჩვენი გუნდი</li>
+                            <li>ვაკანსიები</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>კონტაქტი</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>ბელიაშვილის 142</li>
+                        <li><i class="fas fa-phone-alt"></i>(+995 32) 2940740</li>
+                        <li><i class="fas fa-phone-alt"></i>(+995 32) 2710707</li>
+                        <li><i class="far fa-envelope"></i>info@gpc.ge</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="copyright">  
+                    <p>2021 JSC GPC. All rights reserved.</p>
+                   
+                    <div class="policy">
+                        <p>Terms of use</p>
+                        <p>Privacy policy</p>
+                        <p>Cookies policy</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/myscript.js"></script>
+    <script src="js/quantity.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg id="QUANTITY" xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40">
+  <g id="_ITEMS" data-name="#ITEMS" transform="translate(40)">
+    <g id="Rectangle_68" data-name="Rectangle 68" fill="#fff" stroke="#1db3f3" stroke-width="0.2">
+      <rect width="40" height="40" rx="10" stroke="none"/>
+      <rect x="0.1" y="0.1" width="39.8" height="39.8" rx="9.9" fill="none"/>
+    </g>
+    <text id="_1" data-name="1" transform="translate(14.525 27)" fill="#1db3f3" font-size="18" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">1</tspan></text>
+  </g>
+  <g id="_ITEMS-2" data-name="#ITEMS" transform="translate(80)">
+    <g id="Rectangle_68-2" data-name="Rectangle 68" fill="#fff" stroke="#1db3f3" stroke-width="0.2">
+      <rect width="40" height="40" rx="10" stroke="none"/>
+      <rect x="0.1" y="0.1" width="39.8" height="39.8" rx="9.9" fill="none"/>
+    </g>
+    <text id="_" data-name="+" transform="translate(14.525 28)" fill="#1db3f3" font-size="20" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">+</tspan></text>
+  </g>
+  <g id="_ITEMS-3" data-name="#ITEMS">
+    <g id="Rectangle_68-3" data-name="Rectangle 68" fill="#fff" stroke="#1db3f3" stroke-width="0.2">
+      <rect width="40" height="40" rx="10" stroke="none"/>
+      <rect x="0.1" y="0.1" width="39.8" height="39.8" rx="9.9" fill="none"/>
+    </g>
+    <text id="_-" data-name="-" transform="translate(15.525 28)" fill="#1db3f3" font-size="20" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">-</tspan></text>
+  </g>
+</svg>
