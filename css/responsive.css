@@ -167,15 +167,12 @@
   .products-js{
     flex-direction: column;
   }
-  .glovo-text{
-    max-width: 250px;
-    width: 100%;
-  }
+
   .mySlides-text{
-    font-size: 16px;
+    font-size: 22px;
   }
   .mySlides-p{
-    font-size: 13px;
+    font-size: 18px;
   }
   .orderGlovo{
     padding: 5%;
