@@ -75,6 +75,14 @@
     .tabcontent img{
       margin-left: 0;
     }
+    .dot{
+      width: 20px;
+      height: 20px;
+    }
+    .slider {
+      max-width: 90px;
+      width: 100%;
+    }
 }
 @media (max-width: 1024px){
   .buttom-section{
@@ -130,9 +138,6 @@
   .container{
     padding: 20px;
   }
-  /* .box{
-    width: 50%;
-  } */
   .lang,
   .navigation{
     display: none;
@@ -162,9 +167,22 @@
   .products-js{
     flex-direction: column;
   }
+  .glovo-text{
+    max-width: 250px;
+    width: 100%;
+  }
+  .mySlides-text{
+    font-size: 16px;
+  }
+  .mySlides-p{
+    font-size: 13px;
+  }
+  .orderGlovo{
+    padding: 5%;
+  }
  
 }
-@media (max-width: 425px){
+@media (max-width: 525px){
   .description {
     margin-top: 100px;
 }
@@ -181,12 +199,24 @@
  .offer button{
    margin-top: 30px;
  }
- 
- .mySlides-text{
-   font-size: 16px;
- }
- .mySlides-p{
-   font-size: 13px;
- }
+ .glovo-text{
+  max-width: 200px;
+  width: 100%;
+}
+.mySlides-text{
+  font-size: 12px;
+}
+.mySlides-p{
+  font-size: 10px;
+}
+.glovo{
+  width: 40%;
+  height: 100%;
+}
+}
+@media (max-width: 320px){
+  .glovo-text{
+    letter-spacing: 0;
+  }
 }
 
